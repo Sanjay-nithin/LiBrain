@@ -31,8 +31,8 @@ body {
     border-radius: 15px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    width: 100%;
     max-width: 400px;
-    height: 55%;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #00aaff;
 }
 
@@ -95,7 +95,7 @@ h2 {
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(60deg, #007bff, #6a11cb);
+    background: linear-gradient(90deg, #007bff, #6a11cb);
     color: white;
     border: none;
     border-radius: 30px;
