@@ -13,9 +13,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
-    background-size: 400% 400%;
-    animation: gradientAnimation 8s infinite alternate;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #6a11cb, #ffffff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s infinite alternate;
+    color: white;
 }
 
 /* Background Animation */
@@ -24,16 +25,14 @@ body {
     100% { background-position: 100% 50%; }
 }
 
-
 .login-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(25, 25, 25, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
     max-width: 400px;
-    height: 600px;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -44,14 +43,14 @@ body {
 }
 
 h2 {
-    margin-bottom: 30px;
-    color: #ff6b81;
+    margin-bottom: 15px;
+    color: #00aaff;
 }
 
 /* Input fields */
 .input-group {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     opacity: 0;
     animation: slideUp 0.5s forwards;
 }
@@ -71,29 +70,32 @@ h2 {
     display: block;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #333;
+    color: #ddd;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 2px solid transparent;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     transition: 0.3s;
 }
 
 /* Input Focus Effect */
 .input-group input:focus {
-    border-color: #ff6b81;
-    box-shadow: 0px 0px 8px rgba(255, 107, 129, 0.5);
+    border-color: #00aaff;
+    box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.7);
     outline: none;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Animated Button */
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    background: linear-gradient(90deg, #007bff, #6a11cb);
     color: white;
     border: none;
     border-radius: 30px;
@@ -101,28 +103,32 @@ button {
     font-size: 16px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(255, 107, 129, 0.3);
+    box-shadow: 0px 4px 15px rgba(0, 170, 255, 0.3);
 }
 
 /* Button Hover Effect */
 button:hover {
     transform: scale(1.05);
-    background: linear-gradient(90deg, #ff7eb3, #ff758c);
-    box-shadow: 0px 6px 15px rgba(255, 107, 129, 0.4);
+    background: linear-gradient(90deg, #6a11cb, #007bff);
+    box-shadow: 0px 6px 20px rgba(0, 170, 255, 0.5);
 }
 
-/* Register Link */
+/* Register/Login Link */
 .register-link {
-    margin-top: 20px;
+    margin-top: 10px;
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
 
 .register-link a {
-    color: #ff6b81;
+    color: #00aaff;
     text-decoration: none;
     font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
